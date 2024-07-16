@@ -1,7 +1,7 @@
 import type { Page } from '@playwright/test'
 
 /** ログインのテスト */
-export const loginTest = async (page: Page) => {
+export const login = async (page: Page) => {
 	/** ログイン画面に遷移 */
 	await page.goto('login')
 

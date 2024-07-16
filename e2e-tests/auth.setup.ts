@@ -1,13 +1,13 @@
 import { test as setup } from '@playwright/test'
 import { AUTH_JSON_FILE, INDEX_DB_NAME, OBJECT_STORE_NAME } from './const'
-import { loginTest } from './loginTest'
+import { login } from './login'
 
 /**
  * Firebaseのログイン実行と認証情報をlocalStorageとファイルに保存する
  */
 setup('Firebase Authentication', async ({ page }) => {
 	/** ログイン処理を実行する */
-	await loginTest(page)
+	await login(page)
 
 	/** インデックスDBの内容をローカルストレージにコピーする */
 	await page.evaluate(
