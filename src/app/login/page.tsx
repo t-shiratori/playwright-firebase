@@ -1,7 +1,7 @@
 import { LoginForm } from './form'
 
 const Page = () => {
-	return <LoginForm />
+    return <LoginForm />
 }
 
 export default Page

@@ -4,9 +4,9 @@ import { AuthWrapper } from '@/components/AuthWrapper'
 import { ReactNode } from 'react'
 
 type Props = {
-	children: ReactNode
+    children: ReactNode
 }
 
 export default function Layout({ children }: Props) {
-	return <AuthWrapper>{children}</AuthWrapper>
+    return <AuthWrapper>{children}</AuthWrapper>
 }
